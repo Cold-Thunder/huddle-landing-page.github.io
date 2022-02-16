@@ -1,0 +1,136 @@
+*{
+    padding:0;
+    margin:0;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    max-width:100%;
+    background-color:black;
+}
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+
+.main{
+    background-image: url(images/bg-desktop.svg);
+    background-repeat:no-repeat;
+    background-size:100% 100%;
+    background-color:#674BB1;
+    justify-content: center;
+    content:center;
+    margin:auto;
+    margin-top:100px;
+}
+
+.header img{
+    height:40px;
+    margin:40px;
+}
+.des{
+    display: flex;
+    flex-direction: row;
+    color:white;
+    
+}
+.des img{
+    height:400px;
+    margin-left:40px;
+}
+
+.des .right{
+    margin:40px 0 0 90px;
+}
+.des .right h1{
+    margin-bottom:18px;
+    font-size:28px;
+    line-height:40px;
+}
+.des .right p{
+    font-size:15px;
+    line-height: 20px;
+    color:rgb(255, 255, 255, 0.8);
+    padding-right:30px;
+}
+
+button{
+    margin:20px  0 0 0px;
+    height:45px;
+    width:200px;
+    border-radius:50px;
+    cursor:pointer;
+    font-size:16px;
+    font-weight: bold;
+    color:rgb(0,0,0, 0.5);
+}
+
+.icon{
+    flex-direction: row;
+    color:white;
+    font-size:20px;
+    text-align:right;
+    margin:50px;
+    padding-bottom:30px;
+}
+.icon i{
+    margin:5px;
+}
+
+@media (max-width:400px){
+    body{
+        background-image: url(images/bg-mobile.svg);
+        background-repeat:no-repeat;
+        background-size:100%;
+        background-color:#674BB1;
+        width: 100%;
+    }
+    .header img{
+        height:30px;
+        margin:30px 0 0 20px;
+       /* margin-left:0;
+        margin-bottom:0;*/
+    }
+    .main{
+        justify-content: center;
+        content:center;
+        margin:auto;
+    }
+    .des{
+        display: flex;
+        flex-direction: column;
+        color:white;
+        
+        margin-top:40px;
+
+        font-size:70%;
+    }
+
+    .des img{
+        justify-content: center;
+        content:center;
+        margin:auto;
+
+        height:200px;
+        width:330px;
+    }
+
+    .des .right{
+        width:100%;
+        margin-left:10px;
+        text-align: center;
+    }   
+    
+    .icon{
+        
+        margin-right:100px;
+    }
+}
